@@ -1,0 +1,17 @@
+﻿python : INFO:     Started server process [6160]
+    + CategoryInfo          : NotSpecified: (INFO:     Started server process  
+   [6160]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52282 - "OPTIONS /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52282 - "POST /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60907 - "POST /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64553 - "OPTIONS /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64553 - "POST /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54550 - "OPTIONS /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54550 - "POST /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54722 - "OPTIONS /ai/nearby-services HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54722 - "POST /ai/nearby-services HTTP/1.1" 200 OK
