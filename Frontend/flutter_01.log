@@ -1,0 +1,81 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run -d chrome
+
+## exception
+
+PathAccessException: PathAccessException: Cannot create file, path = 'build\a6bc253b3080e7740ecf8a9ad7e65bba.cache.dill.track.dill' (OS Error: The process cannot access the file because it is being used by another process, errno = 32)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:779:7)
+#1      _File.createSync (dart:io/file_impl.dart:340:5)
+#2      ForwardingFile.createSync (package:file/src/forwarding/forwarding_file.dart:26:16)
+#3      ErrorHandlingFile.createSync.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:265:22)
+#4      _runSync (package:flutter_tools/src/base/error_handling_io.dart:552:14)
+#5      ErrorHandlingFile.createSync (package:flutter_tools/src/base/error_handling_io.dart:264:5)
+#6      ErrorHandlingFile.copySync.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:300:24)
+#7      _runSync (package:flutter_tools/src/base/error_handling_io.dart:552:14)
+#8      ErrorHandlingFile.copySync (package:flutter_tools/src/base/error_handling_io.dart:299:5)
+#9      ResidentRunner.cacheInitialDillCompilation (package:flutter_tools/src/resident_runner.dart:1319:18)
+#10     ResidentWebRunner.run.<anonymous closure> (package:flutter_tools/src/isolated/resident_web_runner.dart:341:11)
+<asynchronous suspension>
+#11     asyncGuard.<anonymous closure> (package:flutter_tools/src/base/async_guard.dart:108:24)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel beta, 3.41.0-0.2.pre, on Microsoft Windows [Version
+    10.0.26200.8328], locale en-PK) [499ms]
+    [32m•[39m Flutter version 3.41.0-0.2.pre on channel beta at
+      C:\flutter_windows_3.24.2-stable\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision a7c4c6bf74 (3 months ago), 2026-01-28 11:28:23 -0800
+    [32m•[39m Engine revision 15d137647e
+    [32m•[39m Dart version 3.11.0 (build 3.11.0-296.4.beta)
+    [32m•[39m DevTools version 2.54.1
+    [32m•[39m Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop,
+      enable-windows-desktop, enable-android, enable-ios, cli-animations,
+      enable-native-assets, omit-legacy-version-file, enable-lldb-debugging,
+      enable-uiscene-migration
+
+[32m[✓][39m Windows Version (11 Home Single Language 64-bit, 25H2, 2009) [3.3s]
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 36.1.0)
+    [8.2s]
+    [32m•[39m Android SDK at C:\Users\aliha\AppData\Local\Android\sdk
+    [32m•[39m Emulator version 36.2.12.0 (build_id 14214601) (CL:N/A)
+    [32m•[39m Platform android-37.0, build-tools 36.1.0
+    [32m•[39m Java binary at: C:\Program Files\Java\jdk-25\bin\java
+      This JDK is specified by the JAVA_HOME environment variable.
+      To manually set the JDK path, use: `flutter config
+      --jdk-dir="path/to/jdk"`.
+    [32m•[39m Java version Java(TM) SE Runtime Environment (build 25.0.1+8-LTS-27)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web [174ms]
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[32m[✓][39m Visual Studio - develop Windows apps (Visual Studio Community 2019 16.11.32)
+    [173ms]
+    [32m•[39m Visual Studio at C:\Program Files (x86)\Microsoft Visual
+      Studio\2019\Community
+    [32m•[39m Visual Studio Community 2019 version 16.11.34301.259
+    [32m•[39m Windows 10 SDK version 10.0.19041.0
+
+[32m[✓][39m Connected device (3 available) [194ms]
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version
+      10.0.26200.8328]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome 148.0.7778.97
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft Edge
+      147.0.3912.98
+
+[32m[✓][39m Network resources [1,746ms]
+    [32m•[39m All expected network resources are available.
+
+[32m•[39m No issues found!
+```
