@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">105594208334</string>
+    <string name="google_api_key" translatable="false">AIzaSyBWc0rRXilDtRYjywXAxJUlJuidRAeQRNM</string>
+    <string name="google_app_id" translatable="false">1:105594208334:android:f8c73f6c12bc23c60f831f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBWc0rRXilDtRYjywXAxJUlJuidRAeQRNM</string>
+    <string name="google_storage_bucket" translatable="false">washing-41a92.firebasestorage.app</string>
+    <string name="project_id" translatable="false">washing-41a92</string>
+</resources>
